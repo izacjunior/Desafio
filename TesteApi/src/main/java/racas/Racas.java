@@ -59,7 +59,7 @@ public class Racas {
 	}
 
 	@Test
-	public void validandoTodasRac2a() {
+	public void validandoTipoRaca() {
 
 		given().headers("x-api-key", "f758823a-2b37-4143-9137-f2ad8a71960d").pathParam("attach_breed", "99999").when()
 				.get("https://api.thecatapi.com/v1/breeds?attach_breed={attach_breed}").then().statusCode(200)
